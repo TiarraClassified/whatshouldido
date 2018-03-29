@@ -45,12 +45,15 @@ class App extends Component {
 
   render() {
     return (
-      <div >
-        <Task tasks={this.state.tasks} delete={this.delete}/>
+      <section id='main'>
+
+        <div id='taskholder'>
+          <Task tasks={this.state.tasks} delete={this.delete}/>
         <AddTask addTask={this.newTask}/>
-        <button onClick={()=>this.pick()}>Pick Task To Do</button><br/>
+        </div>
+        <button id='pick' onClick={()=>this.pick()}><p>Pick Task To Do</p></button><br/>
         {this.state.picked}
-      </div>
+      </section>
     );
   }
 }

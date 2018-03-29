@@ -18,7 +18,10 @@ export default class AddTask extends Component{
                     e.preventDefault();
                     this.add()
                 }}>
-                <input ref={node => this.newTask = node}/>
+
+                <br/>
+
+                <input id='add' ref={node => this.newTask = node}placeholder='Add new task here:'/>
                 </form>
             </div>
         )
